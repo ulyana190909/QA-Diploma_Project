@@ -1,6 +1,6 @@
 _План по автоматизации тестирования cервиса покупки тура, взаимодействующего с СУБД и API Банка._  
 _Приложение предлагает купить тур по определённой цене по дебетовой карте, либо в кредит, по данным банковской карты._
-![](/https://github.com/ulyana190909/QA-Diploma_Project/blob/master/scrinshots/web.png)
+![](https://github.com/ulyana190909/QA-Diploma_Project/blob/master/scrinshots/web.png)
 
 #### Перечень автоматизируемых сценариев.
 ##### Тестирование UI.
