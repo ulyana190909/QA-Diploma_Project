@@ -4,12 +4,13 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import ru.netology.page.PageThePurchaseOfTheTour;
+import ru.netology.page.MonthField;
+
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class TestMonthField {
-    public PageThePurchaseOfTheTour pageThePurchaseOfTheTour = new PageThePurchaseOfTheTour();
+    public MonthField month = new MonthField();
     private final SelenideElement continueField = $(withText("Продолжить"));
     private final SelenideElement successfullResult = $(withText("Операция одобрена Банком."));
     private final SelenideElement invalidFormatMonth = $(withText("Неверно указан срок действия карты"));
@@ -20,26 +21,63 @@ public class TestMonthField {
         open("http://localhost:8090/");
     }
 
+    //Тесты для формы "Купить"
+
     @Test
-    public void correctMonthTest() {
-        pageThePurchaseOfTheTour.correctMonth();
+    public void correctMonthBuyFormTest() {
+        month.correctMonthBuyForm();
         continueField.click();
         successfullResult.waitUntil(Condition.visible, 12000);
     }
 
     @Test
-    public void uncorrectMonthTest() {
-        pageThePurchaseOfTheTour.uncorrectMonth();
+    public void uncorrectMonthBuyFormTest() {
+        month.uncorrectFieldMonthBuyForm();
         continueField.click();
         invalidFormatMonth.waitUntil(Condition.visible, 12000);
     }
 
     @Test
-    public void emptyFieldMonthTest() {
-        pageThePurchaseOfTheTour.emptyFieldMonth();
+    public void oneNumberInMonthFieldBuyFormTest() {
+        month.oneNumberInMonthFieldBuyForm();
+        continueField.click();
+        uncorrectFormatMonth.waitUntil(Condition.visible, 12000);
+    }
+
+    @Test
+    public void emptyFieldMonthBuyFormTest() {
+        month.emptyFieldMonthBuyForm();
+        continueField.click();
+        uncorrectFormatMonth.waitUntil(Condition.visible, 12000);
+    }
+
+    //Тесты для формы "Купить в кредит"
+
+    @Test
+    public void correctMontCreditFormTest() {
+        month.correctMonthCreditForm();
+        continueField.click();
+        successfullResult.waitUntil(Condition.visible, 12000);
+    }
+
+    @Test
+    public void uncorrectMonthCreditFormTest() {
+        month.uncorrectFieldMonthCreditForm();
+        continueField.click();
+        invalidFormatMonth.waitUntil(Condition.visible, 12000);
+    }
+
+    @Test
+    public void oneNumberInMonthFieldCreditFormTest() {
+        month.oneNumberInMonthFieldCreditForm();
+        continueField.click();
+        uncorrectFormatMonth.waitUntil(Condition.visible, 12000);
+    }
+
+    @Test
+    public void emptyFieldMonthCreditFormTest() {
+        month.emptyFieldMonthCreditForm();
         continueField.click();
         uncorrectFormatMonth.waitUntil(Condition.visible, 12000);
     }
 }
-
-//кажется что-то забыла)
