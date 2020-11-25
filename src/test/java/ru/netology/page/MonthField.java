@@ -25,6 +25,8 @@ public class MonthField {
     private final String monthEmpty = FormOfPayment.getEmptyMonthCard();
     private final String yearCorrect = FormOfPayment.getCorrectYearCard();
     private final String cvcCorrect = FormOfPayment.getCvcCorrect();
+    private final String thisMonth = FormOfPayment.getThisMonth();
+    private final String thisYear = FormOfPayment.getThisYear();
 
     //Методы для тестов формы "Купить"
 
@@ -33,7 +35,7 @@ public class MonthField {
         numberCardField.setValue(cardNumberApproved);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -42,7 +44,7 @@ public class MonthField {
         numberCardField.setValue(cardNumberApproved);
         monthField.setValue(String.valueOf(monthUncorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -51,7 +53,7 @@ public class MonthField {
         numberCardField.setValue(cardNumberApproved);
         monthField.setValue(String.valueOf(monthUncorrectOneNumber));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -60,7 +62,16 @@ public class MonthField {
         numberCardField.setValue(cardNumberApproved);
         monthField.setValue(monthEmpty);
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
+        cvcField.setValue(cvcCorrect);
+    }
+
+    public void currentMonthOfTheCardBuyForm() {
+        buyOnCreditField.click();
+        numberCardField.setValue(cardNumberApproved);
+        monthField.setValue(thisMonth);
+        yearField.setValue(thisYear);
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -71,7 +82,7 @@ public class MonthField {
         numberCardField.setValue(cardNumberApproved);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -80,7 +91,7 @@ public class MonthField {
         numberCardField.setValue(cardNumberApproved);
         monthField.setValue(String.valueOf(monthUncorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -89,7 +100,7 @@ public class MonthField {
         numberCardField.setValue(cardNumberApproved);
         monthField.setValue(String.valueOf(monthUncorrectOneNumber));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -98,7 +109,16 @@ public class MonthField {
         numberCardField.setValue(cardNumberApproved);
         monthField.setValue(monthEmpty);
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
+        cvcField.setValue(cvcCorrect);
+    }
+
+    public void currentMonthOfTheCardCreditForm() {
+        buyOnCreditField.click();
+        numberCardField.setValue(cardNumberApproved);
+        monthField.setValue(thisMonth);
+        yearField.setValue(thisYear);
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 }

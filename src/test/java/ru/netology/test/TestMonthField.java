@@ -51,6 +51,13 @@ public class TestMonthField {
         uncorrectFormatMonth.waitUntil(Condition.visible, 12000);
     }
 
+    @Test
+    public void currentMonthOfTheCardBuyFormTest() {
+        month.currentMonthOfTheCardBuyForm();
+        continueField.click();
+        successfullResult.waitUntil(Condition.visible, 12000);
+    }
+
     //Тесты для формы "Купить в кредит"
 
     @Test
@@ -79,5 +86,12 @@ public class TestMonthField {
         month.emptyFieldMonthCreditForm();
         continueField.click();
         uncorrectFormatMonth.waitUntil(Condition.visible, 12000);
+    }
+
+    @Test
+    public void currentMonthOfTheCardCreditFormTest() {
+        month.currentMonthOfTheCardCreditForm();
+        continueField.click();
+        successfullResult.waitUntil(Condition.visible, 12000);
     }
 }

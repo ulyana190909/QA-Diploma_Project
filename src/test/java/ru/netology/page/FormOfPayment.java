@@ -4,6 +4,8 @@ import com.github.javafaker.Faker;
 import lombok.AllArgsConstructor;
 import lombok.Value;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
@@ -15,12 +17,12 @@ public class FormOfPayment {
     public static Faker faker = new Faker();
 
     public static String getNumberCardApproved() {
-        String numberCardApproved = "4444444444444441";
+        String numberCardApproved = "4444 4444 4444 4441";
         return numberCardApproved;
     }
 
     public static String getNumberCardDeclined() {
-        String numberCardDeclined = "4444444444444442";
+        String numberCardDeclined = "4444 4444 4444 4442";
         return numberCardDeclined;
     }
 
@@ -30,18 +32,18 @@ public class FormOfPayment {
     }
 
     public static String getUncorrectNumberCard() {
-        String uncorrectNumber = "4444444444445865";
+        String uncorrectNumber = "4444 4444 4444 5865";
         return uncorrectNumber;
     }
 
     public static String getFewNumbersCard() {
-        String fewNumber = "44444444444444";
+        String fewNumber = "4444 4444 4444 44";
         return fewNumber;
     }
 
-    public static String  getEmptyMonthCard() {
-      String   emptyMonth = "";
-    return emptyMonth;
+    public static String getEmptyMonthCard() {
+        String emptyMonth = "";
+        return emptyMonth;
     }
 
     public static String getCorrectMonthCard() {
@@ -57,11 +59,18 @@ public class FormOfPayment {
         String month = list.get(random.nextInt(list.size()));
         return month;
     }
+    public static String getThisMonth(){
+        String thisMonth = LocalDate.now().format(DateTimeFormatter.ofPattern("MM"));
+        return thisMonth;
+    }
+
+    public static String getThisYear(){
+        String thisYear = LocalDate.now().format(DateTimeFormatter.ofPattern("YY"));
+        return thisYear;
+    }
 
     public static String getUncorrectMonthOneNumber() {
-        List<String> list = Arrays.asList("0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
-        Random random = new Random();
-        String month = list.get(random.nextInt(list.size()));
+        String month = faker.random().hex(1);
         return month;
     }
 
@@ -78,9 +87,7 @@ public class FormOfPayment {
     }
 
     public static String getUncorrectYearOneNumber() {
-        List<String> list = Arrays.asList("0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
-        Random random = new Random();
-        String year = list.get(random.nextInt(list.size()));
+        String year = faker.random().hex(1);
         return year;
     }
 
@@ -100,7 +107,7 @@ public class FormOfPayment {
 
     public static String getOwnerRu() {
         Faker faker = new Faker(new Locale("ru"));
-        String name = faker.name().fullName();
+        String name = faker.name().lastName() + " " + faker.name().firstName();
         return name;
     }
 
@@ -151,9 +158,9 @@ public class FormOfPayment {
         return ownerWithManySpace;
     }
 
-    public static String  getCvcCorrect() {
-        String cvcCorrect = "985";
-    return cvcCorrect;
+    public static String getCvcCorrect() {
+        String cvcCorrect = faker.number().digits(3);
+        return cvcCorrect;
     }
 
     public static String getCvcEmpty() {
@@ -162,9 +169,7 @@ public class FormOfPayment {
     }
 
     public static String getCvcUncorrectOneNumber() {
-        List<String> list = Arrays.asList("0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
-        Random random = new Random();
-        String cvc = list.get(random.nextInt(list.size()));
+        String cvc = faker.random().hex(1);
         return cvc;
     }
 }
