@@ -35,7 +35,7 @@ public class NumberCardField {
         numberCardField.setValue(cardNumberApproved);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -44,7 +44,7 @@ public class NumberCardField {
         numberCardField.setValue(cardNumberDeclined);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -53,7 +53,7 @@ public class NumberCardField {
         numberCardField.setValue(cardNumberUncorrect);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -62,7 +62,7 @@ public class NumberCardField {
         numberCardField.setValue(cardNumberEmpty);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -71,7 +71,7 @@ public class NumberCardField {
         numberCardField.setValue(fewNumbersCard);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -82,7 +82,7 @@ public class NumberCardField {
         numberCardField.setValue(cardNumberApproved);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -91,7 +91,7 @@ public class NumberCardField {
         numberCardField.setValue(cardNumberDeclined);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -100,7 +100,7 @@ public class NumberCardField {
         numberCardField.setValue(cardNumberUncorrect);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -109,7 +109,7 @@ public class NumberCardField {
         numberCardField.setValue(cardNumberEmpty);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -118,7 +118,7 @@ public class NumberCardField {
         numberCardField.setValue(fewNumbersCard);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 }

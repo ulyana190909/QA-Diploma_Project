@@ -48,7 +48,7 @@ public class OwnerField {
         numberCardField.setValue(cardNumberApproved);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
@@ -140,7 +140,7 @@ public class OwnerField {
         numberCardField.setValue(cardNumberApproved);
         monthField.setValue(String.valueOf(monthCorrect));
         yearField.setValue(String.valueOf(yearCorrect));
-        ownerField.setValue(String.valueOf(ownerInRus));
+        ownerField.setValue(ownerInRus);
         cvcField.setValue(cvcCorrect);
     }
 
