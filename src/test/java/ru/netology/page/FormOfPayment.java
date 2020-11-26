@@ -53,6 +53,11 @@ public class FormOfPayment {
         return month;
     }
 
+    public static String getIncorrectZeroMonth() {
+        String monthZero = "00";
+        return monthZero;
+    }
+
     public static String getUncorrectMonthCard() {
         List<String> list = Arrays.asList("13", "14", "15", "16", "16", "17", "18", "19", "20", "21", "22", "23");
         Random random = new Random();
@@ -159,7 +164,7 @@ public class FormOfPayment {
     }
 
     public static String getCvcCorrect() {
-        String cvcCorrect = faker.number().digits(3);
+        String cvcCorrect = "980";
         return cvcCorrect;
     }
 

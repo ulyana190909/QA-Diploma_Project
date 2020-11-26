@@ -31,6 +31,13 @@ public class TestMonthField {
     }
 
     @Test
+    public void uncorrectZeroMonthBuyFormTest() {
+        month.uncorrectZeroMonthBuyForm();
+        continueField.click();
+        invalidFormatMonth.waitUntil(Condition.visible, 12000);
+    }
+
+    @Test
     public void uncorrectMonthBuyFormTest() {
         month.uncorrectFieldMonthBuyForm();
         continueField.click();
@@ -65,6 +72,13 @@ public class TestMonthField {
         month.correctMonthCreditForm();
         continueField.click();
         successfullResult.waitUntil(Condition.visible, 12000);
+    }
+
+    @Test
+    public void uncorrectZeroMonthCreditFormTest() {
+        month.uncorrectZeroMonthCreditForm();
+        continueField.click();
+        invalidFormatMonth.waitUntil(Condition.visible, 12000);
     }
 
     @Test
