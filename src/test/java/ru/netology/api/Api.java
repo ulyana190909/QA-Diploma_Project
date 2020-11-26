@@ -24,6 +24,7 @@ public class Api {
                 .when()
                 .post("/api/v1/pay")
                 .then()
+                .log().all()
                 .statusCode(200)
                 .extract().response().asString();
     }

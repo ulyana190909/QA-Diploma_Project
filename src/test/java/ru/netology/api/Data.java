@@ -8,18 +8,18 @@ public class Data {
 
     @Value
     public static class CardData {
-        String numberCard;
+        String number;
         String month;
         String year;
-        String owner;
+        String holder;
         String cvc;
     }
 
     public static CardData getApprovedCard() {
-        return new CardData("4444 4444 4444 4441", "01", "22", "Smirnova Larisa", "095");
+        return new CardData("4444 4444 4444 4441", "11", "22", "Smirnova Larisa", "195");
     }
 
     public static CardData getDeclinedCard() {
-        return new CardData("4444 4444 4444 4442", "12", "25", "Lolita Noskova", "102");
+        return new CardData("4444 4444 4444 4442", "11", "22", "Smirnova Larisa", "195");
     }
 }
