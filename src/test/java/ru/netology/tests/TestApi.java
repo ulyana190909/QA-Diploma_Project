@@ -4,9 +4,9 @@ import lombok.val;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static ru.netology.api.Api.*;
-import static ru.netology.api.Data.getApprovedCard;
-import static ru.netology.api.Data.getDeclinedCard;
+import static ru.netology.data.Api.*;
+import static ru.netology.data.Data.getApprovedCard;
+import static ru.netology.data.Data.getDeclinedCard;
 
 public class TestApi {
 
