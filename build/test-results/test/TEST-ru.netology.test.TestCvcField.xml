@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.netology.test.TestCvcField" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-11-27T14:13:22" hostname="LAPTOP-NF0QCEOC" time="25.275">
+  <properties/>
+  <testcase name="emptyFieldCvcBuyForm()" classname="ru.netology.test.TestCvcField" time="8.052"/>
+  <testcase name="correctCvcBuyForm()" classname="ru.netology.test.TestCvcField" time="7.876"/>
+  <testcase name="incorrectFormatCvcBuyForm()" classname="ru.netology.test.TestCvcField" time="0.866"/>
+  <testcase name="emptyFieldCvcCreditForm()" classname="ru.netology.test.TestCvcField" time="0.85"/>
+  <testcase name="correctCvcCreditForm()" classname="ru.netology.test.TestCvcField" time="6.669"/>
+  <testcase name="incorrectFormatCvcCreditForm()" classname="ru.netology.test.TestCvcField" time="0.818"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 14657
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+нояб. 27, 2020 5:13:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

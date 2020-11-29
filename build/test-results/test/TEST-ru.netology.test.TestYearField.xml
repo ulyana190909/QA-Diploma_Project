@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.netology.test.TestYearField" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-11-27T14:18:56" hostname="LAPTOP-NF0QCEOC" time="20.939">
+  <properties/>
+  <testcase name="correctYearBuyFormTest()" classname="ru.netology.test.TestYearField" time="10.338"/>
+  <testcase name="invalidYearFieldBuyFormTest()" classname="ru.netology.test.TestYearField" time="0.791"/>
+  <testcase name="correctYearCreditFormTest()" classname="ru.netology.test.TestYearField" time="4.454"/>
+  <testcase name="invalidYearFieldCreditFormTest()" classname="ru.netology.test.TestYearField" time="0.778"/>
+  <testcase name="expiredYearCardCreditFormTest()" classname="ru.netology.test.TestYearField" time="0.776"/>
+  <testcase name="emptyYearFieldCreditFormTest()" classname="ru.netology.test.TestYearField" time="0.738"/>
+  <testcase name="oneNumberInYearBuyFormTest()" classname="ru.netology.test.TestYearField" time="0.772"/>
+  <testcase name="expiredYearCardBuyFormTest()" classname="ru.netology.test.TestYearField" time="0.756"/>
+  <testcase name="emptyYearFieldBuyFormTest()" classname="ru.netology.test.TestYearField" time="0.723"/>
+  <testcase name="oneNumberInYearCreditFormTest()" classname="ru.netology.test.TestYearField" time="0.764"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

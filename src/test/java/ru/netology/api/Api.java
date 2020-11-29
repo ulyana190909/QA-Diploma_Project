@@ -17,7 +17,7 @@ public class Api {
             .log(LogDetail.ALL)
             .build();
 
-    public static String BuyForm (Data.CardData cardData) {
+    public static String buyForm (Data.CardData cardData) {
         return given()
                 .spec(requestSpecification)
                 .body(cardData)
@@ -29,7 +29,7 @@ public class Api {
                 .extract().response().asString();
     }
 
-    public static String CreditForm (Data.CardData cardData) {
+    public static String creditForm (Data.CardData cardData) {
         return given()
                 .spec(requestSpecification)
                 .body(cardData)
