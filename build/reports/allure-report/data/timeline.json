@@ -1,0 +1,715 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-NF0QCEOC",
+    "children" : [ {
+      "name" : "38212@LAPTOP-NF0QCEOC.Test worker(14)",
+      "children" : [ {
+        "name" : "expiredYearCardCreditFormTest()",
+        "uid" : "d8be1237907a23b8",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670732235,
+          "stop" : 1606670733862,
+          "duration" : 1627
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "manyLettersInFieldOwnerBuyFormTest()",
+        "uid" : "c42a7a732c15f6bb",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670552673,
+          "stop" : 1606670567440,
+          "duration" : 14767
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "oneNumberInYearCreditFormTest()",
+        "uid" : "df163e12d1e587f2",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670740260,
+          "stop" : 1606670741982,
+          "duration" : 1722
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "emptyOwnerFieldCreditFormTest()",
+        "uid" : "20de4fa596464719",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670712373,
+          "stop" : 1606670714121,
+          "duration" : 1748
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "currentMonthOfTheCardCreditFormTest()",
+        "uid" : "5182be9455ec2d8f",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670468744,
+          "stop" : 1606670476577,
+          "duration" : 7833
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "correctNumberCardApprovedCreditFormTest()",
+        "uid" : "8329ece6bbfc874f",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670523074,
+          "stop" : 1606670526933,
+          "duration" : 3859
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "fewNumbersCardCreditFormTest()",
+        "uid" : "614e50044b605abd",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670511941,
+          "stop" : 1606670513603,
+          "duration" : 1662
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "correctNumberCardDeclinedCreditFormTest()",
+        "uid" : "71bde09d87308bb1",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670479887,
+          "stop" : 1606670494386,
+          "duration" : 14499
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "emptyYearFieldCreditFormTest()",
+        "uid" : "c8c5cce5bfc7adf3",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670733870,
+          "stop" : 1606670735339,
+          "duration" : 1469
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "uncorrectMonthBuyFormTest()",
+        "uid" : "80bdc4e9033998b3",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670476589,
+          "stop" : 1606670478349,
+          "duration" : 1760
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "fewNumbersCardBuyFormTest()",
+        "uid" : "2325a43713dd6a0d",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670510216,
+          "stop" : 1606670511932,
+          "duration" : 1716
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "oneNumberInMonthFieldCreditFormTest()",
+        "uid" : "80a138b38ef4579b",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670463089,
+          "stop" : 1606670464795,
+          "duration" : 1706
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "manySpaceInFieldOwnerCreditFormTest()",
+        "uid" : "538ff5de3a0f7a73",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670629144,
+          "stop" : 1606670643409,
+          "duration" : 14265
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "manySpaceInFieldOwnerBuyFormTest()",
+        "uid" : "f34bc6c0ea680136",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670683396,
+          "stop" : 1606670697946,
+          "duration" : 14550
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "numbersInFieldOwnerBuyFormTest()",
+        "uid" : "da0eef8e5fc0b0d4",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670547704,
+          "stop" : 1606670549346,
+          "duration" : 1642
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "incorrectFormatCvcCreditForm()",
+        "uid" : "a037fb7d928b803f",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670423842,
+          "stop" : 1606670425695,
+          "duration" : 1853
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "correctNumberCardApprovedBuyFormTest()",
+        "uid" : "572cc514f10bf57c",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670502313,
+          "stop" : 1606670510206,
+          "duration" : 7893
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "manyLettersInFieldOwnerCreditFormTest()",
+        "uid" : "62ea6af47dc1347",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670567451,
+          "stop" : 1606670582047,
+          "duration" : 14596
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "approvedCardBuyForm()",
+        "uid" : "9f182d9052ca6c9e",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670407025,
+          "stop" : 1606670407247,
+          "duration" : 222
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "oneNumberInYearBuyFormTest()",
+        "uid" : "9958999035e08340",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670735355,
+          "stop" : 1606670736997,
+          "duration" : 1642
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "emptyFieldMonthBuyFormTest()",
+        "uid" : "6f7bb9b9eab12451",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670430735,
+          "stop" : 1606670432390,
+          "duration" : 1655
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "uncorrectNumberCardCreditFormTest()",
+        "uid" : "734bde75942bb3e0",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670494401,
+          "stop" : 1606670502302,
+          "duration" : 7901
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "numbersInFieldOwnerCreditFormTest()",
+        "uid" : "370c4b70ce8ead9f",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670614833,
+          "stop" : 1606670629131,
+          "duration" : 14298
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "declinedCardCreditForm()",
+        "uid" : "86b7a9907748e0b7",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670399896,
+          "stop" : 1606670406486,
+          "duration" : 6590
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "doubleSurnameOwnerCreditFormTest()",
+        "uid" : "29f0cafa4cf77d50",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670667124,
+          "stop" : 1606670671579,
+          "duration" : 4455
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "emptyFielsdNumberCardCreditFormTest()",
+        "uid" : "388ea1d728da268e",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670541517,
+          "stop" : 1606670543006,
+          "duration" : 1489
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "emptyFieldCvcCreditForm()",
+        "uid" : "4c02df6d1a76b3e1",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670421870,
+          "stop" : 1606670423833,
+          "duration" : 1963
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "uncorrectMonthCreditFormTest()",
+        "uid" : "246f7c45c76e9b2c",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670466837,
+          "stop" : 1606670468507,
+          "duration" : 1670
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "correctNameFieldZhBuyFormTest()",
+        "uid" : "4ab6745fc6519e19",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670549355,
+          "stop" : 1606670552665,
+          "duration" : 3310
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "emptyFieldMonthCreditFormTest()",
+        "uid" : "2531530da70f54da",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670461342,
+          "stop" : 1606670463082,
+          "duration" : 1740
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "punctuationMarksNumberInOwnerFieldCreditFormTest()",
+        "uid" : "f09b009f666caea9",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670586158,
+          "stop" : 1606670600404,
+          "duration" : 14246
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "correctNameFieldRuBuyFormTest()",
+        "uid" : "6d5e9d8574a004b4",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670543021,
+          "stop" : 1606670547693,
+          "duration" : 4672
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "uncorrectNumberCardBuyFormTest()",
+        "uid" : "9efc2deafc657ed8",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670513611,
+          "stop" : 1606670523062,
+          "duration" : 9451
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "invalidYearFieldCreditFormTest()",
+        "uid" : "138859f0d133e8a7",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670730416,
+          "stop" : 1606670732227,
+          "duration" : 1811
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "incorrectFormatCvcBuyForm()",
+        "uid" : "b2f139ae4ecd2b38",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670419730,
+          "stop" : 1606670421855,
+          "duration" : 2125
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "punctuationMarksNumberInOwnerFieldBuyFormTest()",
+        "uid" : "c5797f2db916b156",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670697966,
+          "stop" : 1606670712362,
+          "duration" : 14396
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "emptyOwnerFieldBuyFormTest()",
+        "uid" : "262e0a53d64806b6",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670714128,
+          "stop" : 1606670728456,
+          "duration" : 14328
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "oneLetterInFieldOwnerBuyFormTest()",
+        "uid" : "25b5581b742f9b32",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670643420,
+          "stop" : 1606670657647,
+          "duration" : 14227
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "invalidYearFieldBuyFormTest()",
+        "uid" : "796b8382fc46818b",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670728479,
+          "stop" : 1606670730409,
+          "duration" : 1930
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "correctNameFieldZhCreditFormTest()",
+        "uid" : "ef84e21daab16d1e",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670582056,
+          "stop" : 1606670586148,
+          "duration" : 4092
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "uncorrectZeroMonthBuyFormTest()",
+        "uid" : "9b81779822c3a3a0",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670432405,
+          "stop" : 1606670446815,
+          "duration" : 14410
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "correctNameFieldRuCreditFormTest()",
+        "uid" : "a2ae963626f13ae3",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670671592,
+          "stop" : 1606670683386,
+          "duration" : 11794
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "oneLetterInFieldOwnerCreditFormTest()",
+        "uid" : "5ea9a6f76dfcc96c",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670600414,
+          "stop" : 1606670614820,
+          "duration" : 14406
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "oneNumberInMonthFieldBuyFormTest()",
+        "uid" : "67e2e1e2200bba99",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670464914,
+          "stop" : 1606670466825,
+          "duration" : 1911
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "declinedBuyForm()",
+        "uid" : "90e0505646547e7f",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670406586,
+          "stop" : 1606670406820,
+          "duration" : 234
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "uncorrectZeroMonthCreditFormTest()",
+        "uid" : "24a811c819fbbfe4",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670446835,
+          "stop" : 1606670461328,
+          "duration" : 14493
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "emptyFieldCvcBuyForm()",
+        "uid" : "14daafb1bab3fc0a",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670407566,
+          "stop" : 1606670419710,
+          "duration" : 12144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "currentMonthOfTheCardBuyFormTest()",
+        "uid" : "845cb06c4ed923db",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670425720,
+          "stop" : 1606670430721,
+          "duration" : 5001
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "expiredYearCardBuyFormTest()",
+        "uid" : "a65121f4461e894f",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670737005,
+          "stop" : 1606670738685,
+          "duration" : 1680
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "approvedCardCreditForm()",
+        "uid" : "474fe06dd6220699",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670406841,
+          "stop" : 1606670407017,
+          "duration" : 176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "doubleSurnameOwnerBuyFormTest()",
+        "uid" : "6cbbe40f7a21d105",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670657660,
+          "stop" : 1606670667115,
+          "duration" : 9455
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "correctNumberCardDeclinedBuyFormTest()",
+        "uid" : "cb937064b9fb8",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606670526941,
+          "stop" : 1606670541496,
+          "duration" : 14555
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "emptyYearFieldBuyFormTest()",
+        "uid" : "484a851faa0763d5",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670738691,
+          "stop" : 1606670740250,
+          "duration" : 1559
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "emptyFielsdNumberCardBuyFormTest()",
+        "uid" : "25593fbf7b839805",
+        "parentUid" : "75650004a79f7abea62d745d2dc7cc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606670478368,
+          "stop" : 1606670479876,
+          "duration" : 1508
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "75650004a79f7abea62d745d2dc7cc2e"
+    } ],
+    "uid" : "adb513828711c49c9804e7d8d461385c"
+  } ]
+}

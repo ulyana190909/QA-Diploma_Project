@@ -6,5 +6,6 @@ target
 *.iml
 settings.gradle
 gradlew.bat
+.gradle
 
 

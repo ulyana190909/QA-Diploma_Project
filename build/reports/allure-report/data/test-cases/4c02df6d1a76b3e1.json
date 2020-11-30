@@ -1,0 +1,57 @@
+{
+  "uid" : "4c02df6d1a76b3e1",
+  "name" : "emptyFieldCvcCreditForm()",
+  "fullName" : "ru.netology.tests.TestCvcField.emptyFieldCvcCreditForm",
+  "historyId" : "8279759a35ce650cef3b4f5a9351ce94",
+  "time" : {
+    "start" : 1606670421870,
+    "stop" : 1606670423833,
+    "duration" : 1963
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "LAPTOP-NF0QCEOC"
+  }, {
+    "name" : "thread",
+    "value" : "38212@LAPTOP-NF0QCEOC.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.tests.TestCvcField"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.tests.TestCvcField"
+  }, {
+    "name" : "testMethod",
+    "value" : "emptyFieldCvcCreditForm"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.tests.TestCvcField"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4c02df6d1a76b3e1.json",
+  "parameterValues" : [ ]
+}

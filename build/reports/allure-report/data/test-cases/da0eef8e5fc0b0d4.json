@@ -1,0 +1,57 @@
+{
+  "uid" : "da0eef8e5fc0b0d4",
+  "name" : "numbersInFieldOwnerBuyFormTest()",
+  "fullName" : "ru.netology.tests.TestOwnerField.numbersInFieldOwnerBuyFormTest",
+  "historyId" : "258ecca9465c40b30dbeb4f2a0588750",
+  "time" : {
+    "start" : 1606670547704,
+    "stop" : 1606670549346,
+    "duration" : 1642
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "LAPTOP-NF0QCEOC"
+  }, {
+    "name" : "thread",
+    "value" : "38212@LAPTOP-NF0QCEOC.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.tests.TestOwnerField"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.tests.TestOwnerField"
+  }, {
+    "name" : "testMethod",
+    "value" : "numbersInFieldOwnerBuyFormTest"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.tests.TestOwnerField"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "da0eef8e5fc0b0d4.json",
+  "parameterValues" : [ ]
+}

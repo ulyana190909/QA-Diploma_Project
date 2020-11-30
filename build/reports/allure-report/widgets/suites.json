@@ -1,0 +1,70 @@
+{
+  "total" : 6,
+  "items" : [ {
+    "uid" : "6367bbe79e217b2b9577866dda61f36d",
+    "name" : "ru.netology.tests.TestOwnerField",
+    "statistic" : {
+      "failed" : 10,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 18
+    }
+  }, {
+    "uid" : "a17932613a96fc7683a9fb334b4da7d4",
+    "name" : "ru.netology.tests.TestMonthField",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 10
+    }
+  }, {
+    "uid" : "133fd7c6c14c3c26e74594219ee40a43",
+    "name" : "ru.netology.tests.TestNumberCardField",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 10
+    }
+  }, {
+    "uid" : "748f2f9f29126be4e7714b4c8abafbde",
+    "name" : "ru.netology.tests.TestYearField",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "1eeecf9dd7253595731b541e49925087",
+    "name" : "ru.netology.tests.TestApi",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "5e1078cdc2729411244df24f2942d981",
+    "name" : "ru.netology.tests.TestCvcField",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  } ]
+}
