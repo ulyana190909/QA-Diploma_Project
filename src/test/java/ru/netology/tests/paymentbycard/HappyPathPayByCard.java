@@ -25,6 +25,7 @@ public class HappyPathPayByCard extends TestBaseUI {
     public void successResultIfApprovedCardsBuyForm() {
         val cardData = getCorrectlyCompletedApprovedCardForm();
         purchaseForm.completedPaymentForm(cardData);
+        purchaseForm.waitSuccessResult();
 
         val statusExpected = "APPROVED";
         val statusActual = getCardStatusForPayment();
@@ -34,12 +35,13 @@ public class HappyPathPayByCard extends TestBaseUI {
         val actualAmount = getAmountPayment();
         assertEquals(expectedAmount, actualAmount);
 
-        val transactionIdExpected = getTransactionId();
-        val paymentIdActual = getPaymentIdForCardPay();
-        assertNotNull(transactionIdExpected);
-        assertNotNull(paymentIdActual);
-        assertEquals(transactionIdExpected, paymentIdActual);
-    }
+        val expectedId = getTransactionId();
+        assertNotNull(expectedId);
+        val actualId = getPaymentIdForCardPay();
+        assertNotNull(actualId);
+        assertEquals(expectedId, actualId);
+}
+
 
     @Test
     public void failResultIfDeclinedCardBuyForm() {
@@ -50,11 +52,11 @@ public class HappyPathPayByCard extends TestBaseUI {
         val statusActual = getCardStatusForPayment();
         assertEquals(statusExpected, statusActual);
 
-        val transactionIdExpected = getTransactionId();
-        val paymentIdActual = getPaymentIdForCardPay();
-        assertNotNull(transactionIdExpected);
-        assertNotNull(paymentIdActual);
-        assertEquals(transactionIdExpected, paymentIdActual);
+        val expectedId = getTransactionId();
+        assertNotNull(expectedId);
+        val actualId = getPaymentIdForCardPay();
+        assertNotNull(actualId);
+        assertEquals(expectedId, actualId);
     }
 }
 

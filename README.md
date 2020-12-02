@@ -23,11 +23,16 @@ _Для запуска тестов необходимо:_
 1. Скачать проект с удаленного репозитория на свой локальный, с помощью команды `git clone https://github.com/ulyana190909/QA-Diploma_Project`
 2. Открыть проект на установленной заранее IntelliJ Idea
 3. Развернуть контейнеры с помощью команды `docker-compose up` в терминале
-4. В соседней вкладке запустить само приложение либо командой  
-`java -Dserver.port=8090 -Dspring.datasource.url=jdbc:postgresql://localhost:5432/app -jar artifacts/aqa-shop.jar` -БД Postgresql  
-либо `java -Dserver.port=8090 -Dspring.datasource.url=jdbc:mysql://localhost:3306/app -jar artifacts/aqa-shop.jar` -БД MysSQL  
-5. Убедиться в том, что приложение запустилось, в логах будет строка `INFO 10688--- [  main] ru.netology.shop.ShopApplication  : Starting ShopApplication v0.0.1-SNAPSHOT on LAPTOP-NF0QCEOC with PID 10688`
-6. Запустить тесты командой `gradlew test allureReport`
+4. В соседней вкладке запустить само приложение либо командой   
+`java -Dserver.port=8090 -Dspring.datasource.url=jdbc:postgresql://localhost:5432/app -jar artifacts/aqa-shop.jar` - для БД Postgresql  
+либо  
+`java -Dserver.port=8090 -Dspring.datasource.url=jdbc:mysql://localhost:3306/app -jar artifacts/aqa-shop.jar` - для БД MysSQL  
+5. Убедиться в том, что приложение запустилось, в логах будет строка:  
+`INFO 10688--- [  main] ru.netology.shop.ShopApplication  : Starting ShopApplication v0.0.1-SNAPSHOT on LAPTOP-NF0QCEOC with PID 10688`
+6. Запустить тесты командой  
+`gradlew clean test -Ddb.url=jdbc:mysql://localhost:3306/app` -  для БД MysSQL  
+либо  
+`gradlew clean test -Ddb.url=jdbc:postgresql://localhost:5432/app` - для БД Postgresql  
 7. Открыть отчет о прохождении тестов командой `gradlew allureServe`
 
 Если потребуется преждевременно завершить прохождение тестов, набрать команду Ctrl+C, далее Y.
