@@ -1,9 +1,11 @@
 package ru.netology.pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import ru.netology.data.Data;
 
+import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class PurchaseForm {
@@ -11,290 +13,47 @@ public class PurchaseForm {
     private final SelenideElement monthField = $("input[placeholder='08']");
     private final SelenideElement yearField = $("input[placeholder='22']");
     private final ElementsCollection fieldSet = $$(".input__control");
-    private final SelenideElement ownerField = fieldSet.get(3);
+    private final SelenideElement holderField = fieldSet.get(3);
     private final SelenideElement cvcField = $("input[placeholder='999']");
 
-    private MainPage mainPage = new MainPage();
-    private Data data = new Data();
+    private final SelenideElement successResult = $(withText("Операция одобрена Банком."));
+    private final SelenideElement invalidCardExpirationDate = $(withText("Неверно указан срок действия карты"));
+    private final SelenideElement incorrectFormat = $(withText("Неверный формат"));
+    private final SelenideElement error = $(withText("Ошибка! Банк отказал в проведении операции."));
+    private final SelenideElement cardExpired = $(withText("Истёк срок действия карты"));
+    private final SelenideElement thisFieldIsRequired = $(withText("Поле обязательно для заполнения"));
+    private final SelenideElement continueField = $(withText("Продолжить"));
 
-
-    public void correctFieldApprovedCardBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.successResult();
+    public void completedPaymentForm(Data.CardData cardData) {
+        numberCardField.setValue(cardData.getNumber());
+        monthField.setValue(cardData.getMonth());
+        yearField.setValue(cardData.getYear());
+        holderField.setValue(cardData.getHolder());
+        cvcField.setValue(cardData.getCvc());
+        continueField.click();
     }
 
-    public void correctFieldDeclinedCardBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardDeclined());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.errorResult();
+    public void waitSuccessResult() {
+        successResult.waitUntil(Condition.visible, 12000);
     }
 
-    public void uncorrectNumberCardFieldBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getUncorrectNumberCard());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.errorResult();
+    public void waitInvalidCardExpirationDate() {
+        invalidCardExpirationDate.waitUntil(Condition.visible, 12000);
     }
 
-    public void emptyNumberCardFieldBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getEmptyNumberCard());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.uncorrectResult();
+    public void waitIncorrectFormat() {
+        incorrectFormat.waitUntil(Condition.visible, 12000);
     }
 
-    public void fewNumbersCardInFieldBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getFewNumbersCard());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.uncorrectResult();
+    public void waitError() {
+        error.waitUntil(Condition.visible, 12000);
     }
 
-
-    public void uncorrectZeroMonthBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getIncorrectZeroMonth());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.invalidResult();
+    public void waitCardExpired() {
+        cardExpired.waitUntil(Condition.visible, 12000);
     }
 
-    public void uncorrectFieldMonthBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getUncorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.invalidResult();
-    }
-
-    public void oneNumberInMonthFieldBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getUncorrectMonthOneNumber());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.uncorrectResult();
-    }
-
-    public void emptyFieldMonthBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getEmptyMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.uncorrectResult();
-    }
-
-    public void currentMonthOfTheCardBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getThisMonth());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.successResult();
-    }
-
-
-    public void uncorrectFieldYearBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getUncorrectYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.invalidResult();
-    }
-
-    public void oneNumberInYearBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getUncorrectYearOneNumber());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.uncorrectResult();
-    }
-
-    public void emptyFieldYearBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getEmptyYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.uncorrectResult();
-    }
-
-    public void yearExpiredCardBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getExpiredСardExpiryDate());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.expiredResult();
-    }
-
-
-    public void correctOwnerFieldRuBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerRu());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.successResult();
-    }
-
-    public void correctOwnerFieldZhBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerZh());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.successResult();
-    }
-
-    public void emptyOwnerFieldBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getEmptyOwner());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.requiredResult();
-        mainPage.uncorrectResult();
-    }
-
-    public void numbersInFieldOwnerBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getNumbersInFieldOwner());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-    }
-
-    public void oneLetterInFieldOwnerBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOneLetterInFieldOwner());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.uncorrectResult();
-    }
-
-    public void manyLettersInFieldOwnerBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getManyLettersInFieldOwner());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.uncorrectResult();
-    }
-
-    public void ownerWithDoubleSurnameBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerWithDoubleSurname());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.successResult();
-    }
-
-    public void ownerWithNumberPunctuationMarksBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerWithNumbersPunctuationMarks());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.uncorrectResult();
-    }
-
-    public void ownerWithManySpaceBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerWithManySpace());
-        cvcField.setValue(data.getCvcCorrect());
-        mainPage.clickButtonContinue();
-        mainPage.uncorrectResult();
-    }
-
-
-    public void cvcUncorrectBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcUncorrectOneNumber());
-        mainPage.clickButtonContinue();
-        mainPage.uncorrectResult();
-    }
-
-    public void cvcEmptyBuyForm() {
-        mainPage.clickBuy();
-        numberCardField.setValue(data.getNumberCardApproved());
-        monthField.setValue(data.getCorrectMonthCard());
-        yearField.setValue(data.getCorrectYearCard());
-        ownerField.setValue(data.getOwnerEn());
-        cvcField.setValue(data.getCvcEmpty());
-        mainPage.clickButtonContinue();
-        mainPage.requiredResult();
-        mainPage.uncorrectResult();
+    public void waitThisFieldIsRequired() {
+        thisFieldIsRequired.waitUntil(Condition.visible, 12000);
     }
 }

@@ -5,35 +5,35 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static ru.netology.data.Api.*;
-import static ru.netology.data.Data.getApprovedCard;
-import static ru.netology.data.Data.getDeclinedCard;
+import static ru.netology.data.Data.getCorrectlyCompletedApprovedCardForm;
+import static ru.netology.data.Data.getCorrectlyCompletedDeclinedCardForm;
 
 public class TestApi {
 
     @Test
     void approvedCardBuyForm() {
-        val validApprovedCard = getApprovedCard();
+        val validApprovedCard = getCorrectlyCompletedApprovedCardForm();
         val status = buyForm(validApprovedCard);
         assertTrue(status.contains("APPROVED"));
     }
 
     @Test
-    void declinedBuyForm() {
-        val validDeclinedCard = getDeclinedCard();
+    void declinedCardBuyForm() {
+        val validDeclinedCard = getCorrectlyCompletedDeclinedCardForm();
         val status = buyForm(validDeclinedCard);
         assertTrue(status.contains("DECLINED"));
     }
 
     @Test
     void approvedCardCreditForm() {
-        val validApprovedCard = getApprovedCard();
+        val validApprovedCard = getCorrectlyCompletedApprovedCardForm();
         val status = creditForm(validApprovedCard);
         assertTrue(status.contains("APPROVED"));
     }
 
     @Test
     void declinedCardCreditForm() {
-        val validDeclinedCard = getDeclinedCard();
+        val validDeclinedCard = getCorrectlyCompletedDeclinedCardForm();
         val status = creditForm(validDeclinedCard);
         assertTrue(status.contains("DECLINED"));
     }
