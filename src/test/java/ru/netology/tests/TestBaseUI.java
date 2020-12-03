@@ -23,10 +23,10 @@ TestBaseUI {
         SelenideLogger.removeListener("allure");
     }
 
-    @AfterEach
-    void cleanDataBases() {
-        SQL.dropDataBase();
-    }
+//    @AfterEach
+//    void cleanDataBases() {
+//        SQL.dropDataBase();
+//    }
 
     @BeforeEach
     void setUpSutUrl() {

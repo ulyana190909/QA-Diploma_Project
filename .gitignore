@@ -7,5 +7,6 @@ target
 settings.gradle
 gradlew.bat
 .gradle
+build
 
 

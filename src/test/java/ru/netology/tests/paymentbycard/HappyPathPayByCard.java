@@ -10,6 +10,7 @@ import ru.netology.tests.TestBaseUI;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static ru.netology.data.Data.getCorrectlyCompletedApprovedCardForm;
+import static ru.netology.data.Data.getCorrectlyCompletedDeclinedCardForm;
 import static ru.netology.data.SQL.*;
 
 public class HappyPathPayByCard extends TestBaseUI {
@@ -39,13 +40,13 @@ public class HappyPathPayByCard extends TestBaseUI {
         assertNotNull(expectedId);
         val actualId = getPaymentIdForCardPay();
         assertNotNull(actualId);
+
         assertEquals(expectedId, actualId);
 }
 
-
     @Test
     public void failResultIfDeclinedCardBuyForm() {
-        val cardData = getCorrectlyCompletedApprovedCardForm();
+        val cardData = getCorrectlyCompletedDeclinedCardForm();
         purchaseForm.completedPaymentForm(cardData);
 
         val statusExpected = "DECLINED";
