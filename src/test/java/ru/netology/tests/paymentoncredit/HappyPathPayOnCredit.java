@@ -30,10 +30,10 @@ public class HappyPathPayOnCredit extends TestBaseUI {
 
         val expected = "APPROVED";
         val actual = getCardStatusForCreditRequest();
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
 
         val bankIdExpected = getBankId();
-        val paymentIdActual = getPaymentIdForCreditRequest();
+        val paymentIdActual = getPaymentId();
         assertNotNull(bankIdExpected);
         assertNotNull(paymentIdActual);
         assertEquals(bankIdExpected, paymentIdActual);
@@ -50,7 +50,7 @@ public class HappyPathPayOnCredit extends TestBaseUI {
         assertEquals(statusExpected, statusActual);
 
         val bankIdExpected = getBankId();
-        val paymentIdActual = getPaymentIdForCreditRequest();
+        val paymentIdActual = getPaymentId();
         assertNotNull(bankIdExpected);
         assertNotNull(paymentIdActual);
         assertEquals(bankIdExpected, paymentIdActual);
