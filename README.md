@@ -40,14 +40,14 @@ _Для запуска тестов необходимо:_
 ___
 ##### **Подготовка отчета Allure**
 При необходимости создания отчета тестирования, запустить тесты следующим образом:   
-`gradlew test -Ddb.url=jdbc:mysql://localhost:3306/app **аllureReport**` -  для БД MysSQL, либо  
-`gradlew test -Ddb.url=jdbc:postgresql://localhost:5432/app **аllureReport**` - для БД Postgresql  
+`gradlew test -Ddb.url=jdbc:mysql://localhost:3306/app аllureReport` -  для БД MysSQL, либо  
+`gradlew test -Ddb.url=jdbc:postgresql://localhost:5432/app аllureReport` - для БД Postgresql  
 
 `allureReport` - используется при первой генерации отчета.  
 
 При повторной генерации отчета запускать тесты командой:  
-`gradlew test -Ddb.url=jdbc:mysql://localhost:3306/app **allureServe**` -  для БД MysSQL, либо  
-`gradlew test -Ddb.url=jdbc:postgresql://localhost:5432/app **allureServe**` - для БД Postgresql  
+`gradlew test -Ddb.url=jdbc:mysql://localhost:3306/app allureServe` -  для БД MysSQL, либо  
+`gradlew test -Ddb.url=jdbc:postgresql://localhost:5432/app allureServe` - для БД Postgresql  
 
 Отчет будет открываться после прохождения тестов автоматически в браузере.  
 
