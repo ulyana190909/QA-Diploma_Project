@@ -11,7 +11,10 @@ ___
 * кредитному сервису.
 ___
 ##### Документация:
-[План по автоматизации тестирования](https://github.com/ulyana190909/QA-Diploma_Project/blob/master/documents/Plan.md/ "План по автомазации тестирования")
+[План по автоматизации тестирования](https://github.com/ulyana190909/QA-Diploma_Project/blob/master/documents/Plan.md/ "План по автомазации тестирования")  
+[Отчет по итогам автоматизированного тестирования](https://github.com/ulyana190909/QA-Diploma_Project/blob/master/documents/Report.md/ "Отчет по итогам автоматизированного тестирования")  
+[Отчет по итогам автоматизации](https://github.com/ulyana190909/QA-Diploma_Project/blob/master/documents/Summary.md/ "Отчет по итогам автоматизации")  
+
 ___
 ##### **Инструкция по запуску тестов:**
 
@@ -34,5 +37,18 @@ _Для запуска тестов необходимо:_
 либо  
 `gradlew clean test -Ddb.url=jdbc:postgresql://localhost:5432/app` - для БД Postgresql  
 7. Открыть отчет о прохождении тестов командой `gradlew allureServe`
+___
+##### **Подготовка отчета Allure**
+При необходимости создания отчета тестирования, запустить тесты следующим образом:   
+`gradlew test -Ddb.url=jdbc:mysql://localhost:3306/app **аllureReport**` -  для БД MysSQL, либо  
+`gradlew test -Ddb.url=jdbc:postgresql://localhost:5432/app **аllureReport**` - для БД Postgresql  
+
+`allureReport` - используется при первой генерации отчета.  
+
+При повторной генерации отчета запускать тесты командой:  
+`gradlew test -Ddb.url=jdbc:mysql://localhost:3306/app **allureServe**` -  для БД MysSQL, либо  
+`gradlew test -Ddb.url=jdbc:postgresql://localhost:5432/app **allureServe**` - для БД Postgresql  
+
+Отчет будет открываться после прохождения тестов автоматически в браузере.  
 
 Если потребуется преждевременно завершить прохождение тестов, набрать команду Ctrl+C, далее Y.
